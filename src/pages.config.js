@@ -52,6 +52,9 @@ import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import CourseView from './pages/CourseView';
 import Progress from './pages/Progress';
+import AdminDashboard from './pages/AdminDashboard';
+import CMS from './pages/CMS';
+import QuizView from './pages/QuizView';
 import __Layout from './Layout.jsx';
 
 
@@ -61,6 +64,9 @@ export const PAGES = {
     "CourseDetail": CourseDetail,
     "CourseView": CourseView,
     "Progress": Progress,
+    "AdminDashboard": AdminDashboard,
+    "CMS": CMS,
+    "QuizView": QuizView,
 }
 
 export const pagesConfig = {
