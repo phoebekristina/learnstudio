@@ -43,7 +43,8 @@ export default function Layout({ children, currentPageName }) {
   const navItems = isAdmin ? adminNav : studentNav;
 
   return (
-    <div className="flex h-screen bg-[#fafafa] overflow-hidden">
+    <div className="flex flex-col h-screen bg-[#fafafa] overflow-hidden">
+      <DemoBanner />
       {/* Desktop Sidebar */}
       <aside className={cn(
         "hidden md:flex flex-col border-r border-border/50 bg-white transition-all duration-300 ease-out",
