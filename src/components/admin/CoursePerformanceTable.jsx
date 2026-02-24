@@ -48,7 +48,7 @@ export default function CoursePerformanceTable({ courses, enrollments, quizAttem
                   </span>
                 </td>
                 <td className="px-5 py-3 text-right">
-                  {avgScore !== null ? (
+                  {row.avgScore !== null ? (
                     <span className={row.avgScore >= 70 ? "text-green-600 font-semibold" : "text-muted-foreground"}>
                       {row.avgScore}%
                     </span>
