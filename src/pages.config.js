@@ -55,6 +55,7 @@ import Progress from './pages/Progress';
 import AdminDashboard from './pages/AdminDashboard';
 import CMS from './pages/CMS';
 import QuizView from './pages/QuizView';
+import Landing from './pages/Landing';
 import __Layout from './Layout.jsx';
 
 
@@ -67,6 +68,7 @@ export const PAGES = {
     "AdminDashboard": AdminDashboard,
     "CMS": CMS,
     "QuizView": QuizView,
+    "Landing": Landing,
 }
 
 export const pagesConfig = {
