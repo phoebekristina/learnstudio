@@ -45,6 +45,7 @@ export default function Layout({ children, currentPageName }) {
   return (
     <div className="flex flex-col h-screen bg-[#fafafa] overflow-hidden">
       <DemoBanner />
+      <div className="flex flex-1 overflow-hidden">
       {/* Desktop Sidebar */}
       <aside className={cn(
         "hidden md:flex flex-col border-r border-border/50 bg-white transition-all duration-300 ease-out",
