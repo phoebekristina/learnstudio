@@ -197,6 +197,7 @@ export default function Layout({ children, currentPageName }) {
           {children}
         </div>
       </main>
+      </div>
     </div>
   );
 }
