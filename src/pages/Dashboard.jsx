@@ -74,18 +74,25 @@ export default function Dashboard() {
         >
           <StatCard label="Enrolled" value={stats.enrolled} icon={BookOpen} />
           <StatCard label="Completed" value={stats.completed} icon={Trophy} />
-          <StatCard label="Hours" value={`${stats.totalHours}h`} icon={Clock} />
-          <StatCard label="Active" value={stats.streak} icon={Flame} />
+          <StatCard label="Hours Spent" value={`${stats.totalHours}h`} icon={Clock} />
+          <StatCard label="Active Courses" value={stats.streak} icon={Flame} />
         </motion.div>
       )}
 
-      {/* Continue Learning */}
+      {/* Main content */}
       <div className="space-y-8">
         {!isLoading && (
           <>
             <ContinueLearning enrollments={enrollments} courses={courses} />
             <RecommendedCourses courses={courses} enrolledCourseIds={enrolledCourseIds} />
           </>
+        )}
+        {isLoading && (
+          <div className="space-y-3">
+            <Skeleton className="h-5 w-40 rounded-lg" />
+            <Skeleton className="h-[100px] rounded-xl" />
+            <Skeleton className="h-[100px] rounded-xl" />
+          </div>
         )}
       </div>
     </div>
