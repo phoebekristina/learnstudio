@@ -136,8 +136,8 @@ export default function Landing() {
       {/* CTA */}
       <section className="py-20 px-6 bg-foreground text-white">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">Ready to start learning?</h2>
-          <p className="text-sm text-white/60 mb-8">Join thousands of learners advancing their skills.</p>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">Ready to transform your team?</h2>
+          <p className="text-sm text-white/60 mb-8">Join forward-thinking organisations already using LearnStudio.</p>
           <Button
             size="lg"
             className="bg-white text-foreground hover:bg-white/90 text-sm h-11 px-8 rounded-xl"
