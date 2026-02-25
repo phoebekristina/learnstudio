@@ -53,7 +53,6 @@ import CourseDetail from './pages/CourseDetail';
 import CourseView from './pages/CourseView';
 import Courses from './pages/Courses';
 import Dashboard from './pages/Dashboard';
-import Landing from './pages/Landing';
 import Progress from './pages/Progress';
 import QuizView from './pages/QuizView';
 import __Layout from './Layout.jsx';
@@ -66,7 +65,6 @@ export const PAGES = {
     "CourseView": CourseView,
     "Courses": Courses,
     "Dashboard": Dashboard,
-    "Landing": Landing,
     "Progress": Progress,
     "QuizView": QuizView,
 }
