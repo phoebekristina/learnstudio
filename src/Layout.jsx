@@ -142,7 +142,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="w-7 h-7 rounded-lg bg-foreground flex items-center justify-center">
             <GraduationCap className="w-3.5 h-3.5 text-white" />
           </div>
-          <span className="font-semibold text-sm">Studio</span>
+          <span className="font-semibold text-sm">LearnStudio</span>
         </Link>
         <button onClick={() => setMobileOpen(!mobileOpen)} className="w-8 h-8 flex items-center justify-center">
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
