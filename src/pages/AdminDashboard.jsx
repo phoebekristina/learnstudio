@@ -192,39 +192,7 @@ export default function AdminDashboard() {
                 <MetricCard label="Avg Score" value={`${avgQuizScore}%`} icon={Activity} />
                 <MetricCard label="Unique Takers" value={[...new Set(quizAttempts.map(q => q.user_email))].length} icon={Users} />
               </div>
-              <div className="bg-white rounded-xl border border-border/50 overflow-hidden">
-                <div className="px-5 py-4 border-b border-border/30">
-                  <h3 className="text-sm font-semibold">Quiz Attempt Log</h3>
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-xs">
-                    <thead>
-                      <tr className="text-[11px] text-muted-foreground border-b border-border/20">
-                        <th className="text-left font-medium px-5 py-3">Student</th>
-                        <th className="text-left font-medium px-5 py-3">Quiz</th>
-                        <th className="text-right font-medium px-5 py-3">Score</th>
-                        <th className="text-right font-medium px-5 py-3">Attempt</th>
-                        <th className="text-right font-medium px-5 py-3">Result</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {quizAttempts.map(q => (
-                        <tr key={q.id} className="border-b border-border/20 last:border-0 hover:bg-muted/20">
-                          <td className="px-5 py-3 font-medium">{q.user_email}</td>
-                          <td className="px-5 py-3 text-muted-foreground">{q.quiz_id}</td>
-                          <td className="px-5 py-3 text-right font-semibold">{q.percentage}%</td>
-                          <td className="px-5 py-3 text-right text-muted-foreground">#{q.attempt_number}</td>
-                          <td className="px-5 py-3 text-right">
-                            <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${q.passed ? "bg-green-50 text-green-700" : "bg-red-50 text-red-600"}`}>
-                              {q.passed ? "Passed" : "Failed"}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              <QuizAttemptLog quizAttempts={quizAttempts} quizzes={quizzes} />
             </motion.div>
           )}
         </>
