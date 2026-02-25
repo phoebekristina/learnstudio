@@ -47,15 +47,15 @@ export default function Landing() {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-muted text-xs font-medium text-muted-foreground mb-6">
-              <Zap className="w-3 h-3" /> Premium Learning Platform
+            <Zap className="w-3 h-3" /> Enterprise Learning Platform
             </span>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-5">
-              Learn without
-              <br />
-              <span className="text-muted-foreground">limits.</span>
+            Upskill your
+            <br />
+            <span className="text-muted-foreground">entire team.</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground max-w-lg mx-auto mb-8 leading-relaxed">
-              Expert-crafted courses designed for mastery. Track your progress, take assessments, and earn certificates — all in one elegant platform.
+            LearnStudio delivers expert-crafted courses, quizzes, and progress analytics in a beautiful, modern platform built for serious organisations.
             </p>
             <div className="flex items-center justify-center gap-3">
               <Button
@@ -155,9 +155,9 @@ export default function Landing() {
             <div className="w-6 h-6 rounded-md bg-foreground flex items-center justify-center">
               <GraduationCap className="w-3 h-3 text-white" />
             </div>
-            <span className="text-xs font-medium">Studio</span>
+            <span className="text-xs font-medium">LearnStudio</span>
           </div>
-          <span className="text-[10px] text-muted-foreground">© 2026 Studio. All rights reserved.</span>
+          <span className="text-[10px] text-muted-foreground">© 2026 LearnStudio. All rights reserved.</span>
         </div>
       </footer>
     </div>
