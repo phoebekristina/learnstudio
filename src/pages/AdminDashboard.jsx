@@ -12,6 +12,8 @@ import CoursePerformanceTable from "@/components/admin/CoursePerformanceTable";
 import StudentActivityTable from "@/components/admin/StudentActivityTable";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 import { Button } from "@/components/ui/button";
+import QuizAttemptLog from "@/components/admin/QuizAttemptLog";
+import { useQuery as useQuizQuery } from "@tanstack/react-query";
 
 const COLORS = ["#18181b", "#3f3f46", "#71717a", "#a1a1aa", "#d4d4d8"];
 const tabs = ["Overview", "Students", "Courses", "Quizzes"];
