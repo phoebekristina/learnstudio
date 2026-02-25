@@ -44,6 +44,12 @@ export default function AdminDashboard() {
     enabled,
   });
 
+  const { data: quizzes = [] } = useQuery({
+    queryKey: ["admin-quizzes"],
+    queryFn: () => base44.entities.Quiz.list(),
+    enabled,
+  });
+
   if (user && user.role !== "admin") {
     return (
       <div className="flex items-center justify-center min-h-screen">
