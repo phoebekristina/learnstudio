@@ -61,7 +61,7 @@ export default function Layout({ children, currentPageName }) {
               <div className="w-8 h-8 rounded-lg bg-foreground flex items-center justify-center">
                 <GraduationCap className="w-4.5 h-4.5 text-white" />
               </div>
-              <span className="font-semibold text-[15px] tracking-tight">Studio</span>
+              <span className="font-semibold text-[15px] tracking-tight">LearnStudio</span>
             </Link>
           )}
           {collapsed && (
